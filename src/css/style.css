@@ -1,0 +1,56 @@
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "hero hero hero hero"
+                         "about about about about" 
+                         "services services services services"
+                         "projects projects projects projects"
+                         "footer footer footer footer";  
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;                            
+}
+
+.header{
+    grid-area: header;
+    background-color: blue;
+}
+
+.hero{
+    grid-area: hero;
+    height: 100vh;
+    background-image: url(../images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .title{
+    font-size: 3.7rem;
+    font-weight: 500;
+    /* #3a3b3e */
+}
+
+.about{
+    grid-area: about;
+    background-color: chartreuse;
+}
+
+.services{
+    grid-area: services;
+    background-color: coral;
+}
+
+.projects{
+    grid-area: projects;
+    background-color: darkcyan;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: darkgreen;
+}
