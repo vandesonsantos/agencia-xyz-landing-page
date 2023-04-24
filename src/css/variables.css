@@ -1,4 +1,6 @@
 :root{
+    --background-01-services: #8A2BE2;
+    --background-02-services: #FFB6C1;
     --color-hover: #FF7F50;
 
     --default-font: 'Roboto', sans-serif;

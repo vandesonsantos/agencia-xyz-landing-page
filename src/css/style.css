@@ -110,11 +110,11 @@ body{
 }
 
 .services .ball-1{
-    background-color: #8A2BE2;   
+    background-color: var(--background-01-services);   
 }
 
 .services .ball-2{
-    background-color: #FFB6C1;
+    background-color: var(--background-02-services)
 }
 
 .services .ball-1, .services .ball-2{
