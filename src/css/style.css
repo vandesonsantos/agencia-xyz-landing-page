@@ -8,13 +8,49 @@ body{
                          "footer footer footer footer";  
     grid-template-columns: repeat(4, 1fr);
     font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--default-font);
     font-weight: 900;                            
 }
 
 .header{
     grid-area: header;
-    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    margin: 0 40px 0 20px;
+}
+
+.header .logo{
+    font-weight: 700;
+    font-size: 23px;
+    transition: 0.3s ease-in-out;
+    padding: 20px 0;
+}
+
+.header .logo:hover{
+    color: var(--color-hover);
+}
+
+.header .navigation{
+    padding: 20px 0;
+}
+
+.header .navigation .menu{
+    display: flex;
+    gap: 40px;
+}
+
+.header .navigation .menu li a{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.header .navigation .menu li a:hover{
+    background-color: var(--color-hover);
+    color: #fff;
 }
 
 .hero{
