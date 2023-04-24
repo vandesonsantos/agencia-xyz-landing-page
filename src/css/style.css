@@ -118,6 +118,15 @@ body{
     display: flex;
 }
 
+.projects div{
+    transition: 0.3s ease-in-out;
+}
+
+.projects div:hover{
+    transform: scale(1.01);
+    opacity: 0.6;
+}
+
 .footer{
     grid-area: footer;
     display: flex;
@@ -145,6 +154,7 @@ body{
 .footer .menu-footer ul li a{
     font-size: 1.5rem;
     font-weight: 500;
+    transition: 0.3s ease-in-out;
 }
 
 .footer .menu-footer ul li a:hover{
