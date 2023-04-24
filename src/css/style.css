@@ -78,9 +78,41 @@ body{
 
 .services{
     grid-area: services;
-    background-color: coral;
+    display: flex;
+    justify-content: space-around;
 }
 
+.services .ball-1{
+    background-color: #8A2BE2;   
+}
+
+.services .ball-2{
+    background-color: #FFB6C1;
+}
+
+.services .ball-1, .services .ball-2{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+}
+
+.services .ball-1 .text, .services .ball-2 .text{
+    margin-top: 20px;
+}
+
+.services .ball-1 .text h2, .services .ball-2 .text h2{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.services .ball-1 .text p, .services .ball-2 .text p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 0 50px;
+}
+ 
 .projects{
     grid-area: projects;
     background-color: darkcyan;
