@@ -120,5 +120,43 @@ body{
 
 .footer{
     grid-area: footer;
-    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
 }
+
+.footer .logo-footer{
+    font-weight: 700;
+    font-size: 23px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .logo-footer:hover{
+    color: var(--color-hover);
+}
+
+.footer .menu-footer ul{
+    display: flex;
+    margin: 50px 0;
+    gap: 40px;
+}
+
+.footer .menu-footer ul li a{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer .menu-footer ul li a:hover{
+    color: var(--color-hover);
+}
+
+.footer .redes-sociais{
+    display: flex;
+    gap: 40px;
+}
+
+.footer .redes-sociais i:hover{
+    color: var(--color-hover);
+}
+
