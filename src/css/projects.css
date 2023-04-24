@@ -1,0 +1,12 @@
+.projects{
+    display: flex;
+}
+
+.projects div{
+    transition: 0.3s ease-in-out;
+}
+
+.projects div:hover{
+    transform: scale(1.01);
+    opacity: 0.6;
+}

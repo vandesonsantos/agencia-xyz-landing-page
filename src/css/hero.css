@@ -1,0 +1,21 @@
+.hero{
+    height: 100vh;
+    background-image: url(../images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .title{
+    font-size: 3.7rem;
+    font-weight: 500;
+}
+
+@media(max-width: 800px){
+    .hero .title{
+        font-size: 3rem;
+    }
+}

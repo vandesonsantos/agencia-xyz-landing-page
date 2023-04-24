@@ -14,218 +14,24 @@ body{
 
 .header{
     grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 25px;
-    margin: 0 40px 0 20px;
-}
-
-.header .logo{
-    font-weight: 700;
-    font-size: 23px;
-    transition: 0.3s ease-in-out;
-    padding: 20px 0;
-}
-
-.header .logo:hover{
-    color: var(--color-hover);
-}
-
-.header .navigation{
-    padding: 20px 0;
-}
-
-.header .navigation .menu{
-    display: flex;
-    gap: 40px;
-}
-
-.header .navigation .menu li a{
-    font-weight: 700;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: 0.3s ease-in-out;
-}
-
-.header .navigation .menu li a:hover{
-    background-color: var(--color-hover);
-    color: #fff;
 }
 
 .hero{
     grid-area: hero;
-    height: 100vh;
-    background-image: url(../images/lemons.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero .title{
-    font-size: 3.7rem;
-    font-weight: 500;
 }
 
 .about{
     grid-area: about;
-    margin-bottom: -4px;
-}
-
-.about .about-1{
-    display: flex;
-}
-
-.about .about-1 .title-about, .about .about-1 .image-about{
-    width: 50%;
-}
-
-.about .about-1 .title-about{
-    padding: 100px;
-}
-
-.about .about-1 .title-about h2{
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-.about .about-1 .title-about p{
-    font-weight: 400;
-    font-size: 1.7rem;
-    margin: 20px 0;
-}
-
-.about .about-1 .title-about a{
-    font-weight: 400;
-    font-size: 1.6rem;
 }
 
 .services{
     grid-area: services;
-    display: flex;
-    justify-content: space-around;
 }
 
-.services .ball-1{
-    background-color: var(--background-01-services);   
-}
-
-.services .ball-2{
-    background-color: var(--background-02-services)
-}
-
-.services .ball-1, .services .ball-2{
-    width: 50%;
-    height: 100vh;
-    text-align: center;
-    padding: 50px;
-}
-
-.services .ball-1 .text, .services .ball-2 .text{
-    margin-top: 20px;
-}
-
-.services .ball-1 .text h2, .services .ball-2 .text h2{
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-.services .ball-1 .text p, .services .ball-2 .text p{
-    font-weight: 400;
-    font-size: 1.7rem;
-    margin: 0 50px;
-}
- 
 .projects{
     grid-area: projects;
-    display: flex;
-}
-
-.projects div{
-    transition: 0.3s ease-in-out;
-}
-
-.projects div:hover{
-    transform: scale(1.01);
-    opacity: 0.6;
 }
 
 .footer{
     grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 70px 0;
-}
-
-.footer .logo-footer{
-    font-weight: 700;
-    font-size: 23px;
-    transition: 0.3s ease-in-out;
-}
-
-.footer .logo-footer:hover{
-    color: var(--color-hover);
-}
-
-.footer .menu-footer ul{
-    display: flex;
-    margin: 50px 0;
-    gap: 40px;
-}
-
-.footer .menu-footer ul li a{
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-}
-
-.footer .menu-footer ul li a:hover{
-    color: var(--color-hover);
-}
-
-.footer .redes-sociais{
-    display: flex;
-    gap: 40px;
-}
-
-.footer .redes-sociais i:hover{
-    color: var(--color-hover);
-}
-
-@media(max-width: 800px){
-    .header .navigation .menu{
-        display: none;
-    }
-
-    .hero .title{
-        font-size: 3rem;
-    }
-
-    .about .about-1{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about .about-1 .title-about, .about .about-1 .image-about{
-        width: 100%;
-    }
-
-    .about .about-1 .title-about{
-        padding: 50px;
-        text-align: center;
-    }
-
-    .services{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .services .ball-1, .services .ball-2{
-        width: 100%;
-    }
 }
