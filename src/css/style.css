@@ -68,12 +68,39 @@ body{
 .hero .title{
     font-size: 3.7rem;
     font-weight: 500;
-    /* #3a3b3e */
 }
 
 .about{
     grid-area: about;
-    background-color: chartreuse;
+    margin-bottom: -4px;
+}
+
+.about .about-1{
+    display: flex;
+}
+
+.about .about-1 .title-about, .about .about-1 .image-about{
+    width: 50%;
+}
+
+.about .about-1 .title-about{
+    padding: 100px;
+}
+
+.about .about-1 .title-about h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.about .about-1 .title-about p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 20px 0;
+}
+
+.about .about-1 .title-about a{
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 .services{
@@ -109,7 +136,7 @@ body{
 
 .services .ball-1 .text p, .services .ball-2 .text p{
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin: 0 50px;
 }
  
@@ -169,4 +196,7 @@ body{
 .footer .redes-sociais i:hover{
     color: var(--color-hover);
 }
+/* 
+@media(max-width: 800px){
 
+} */
