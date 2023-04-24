@@ -115,7 +115,7 @@ body{
  
 .projects{
     grid-area: projects;
-    background-color: darkcyan;
+    display: flex;
 }
 
 .footer{
