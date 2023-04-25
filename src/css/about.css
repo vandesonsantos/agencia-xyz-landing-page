@@ -23,11 +23,16 @@
     font-weight: 400;
     font-size: 1.7rem;
     margin: 20px 0;
+    line-height: 25px;
 }
 
 .about .conteiner-about .title-about a{
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+.about .conteiner-about .title-about a:hover{
+    font-weight: 800;
 }
 
 @media(max-width: 800px){
