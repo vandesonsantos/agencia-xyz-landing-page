@@ -1,17 +1,30 @@
 .hero{
-    height: 100vh;
+    height: 89vh;
     background-image: url(../images/lemons.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .hero .title{
-    font-size: 3.7rem;
+    font-size: 4rem;
     font-weight: 500;
+}
+
+.hero::after{
+    content: url("../images/seta_preta.png");
+    bottom: 40px;
+    position: absolute;
+    animation: down-arrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes down-arrow{
+    0% { -webkit-transform: translateY(0); opacity: 0.4; }
+    100% { -webkit-transform: translateY(0.4rem); opacity: 0.9; }
 }
 
 @media(max-width: 800px){
