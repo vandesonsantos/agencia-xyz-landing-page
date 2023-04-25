@@ -17,12 +17,12 @@
     color: var(--color-hover);
 }
 
-.header .navigation .menu{
+.header .navigation .menu-desktop{
     display: flex;
     gap: 40px;
 }
 
-.header .navigation .menu li a{
+.header .navigation .menu-desktop li a{
     font-weight: 500;
     font-size: 17px;
     padding: 10px 20px;
@@ -30,17 +30,103 @@
     transition: 0.3s ease-in-out;
 }
 
-.header .navigation .menu li a:hover{
+.header .navigation .menu-desktop li a:hover{
     background-color: var(--color-hover);
     color: #fff;
 }
 
-@media(max-width: 800px){
+.header .navigation .menu-checkbox{
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.header .navigation label{
+    display: flex;
+    flex-direction: column;
+}
+
+.header .navigation .hamburguer{
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .navigation .hamburguer::before, .header .navigation .hamburguer::after{
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.header .navigation .hamburguer::before{
+    top: -10px;
+}
+
+.header .navigation .hamburguer::after{
+    bottom: -10px;
+}
+
+.header .navigation input{
+    display: none;
+}
+
+.header .navigation input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.header .navigation input:checked ~ label .hamburguer::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header .navigation input:checked ~ label .hamburguer::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media(max-width: 900px){
     .header{
         padding: 0;
     }
 
-    .header .navigation .menu{
+    .header .navigation .menu-desktop{
         display: none;
+    }
+
+    .header .navigation .menu-checkbox{
+        display: block;
+    }
+
+    .header .navigation input:checked ~ .menu-desktop{
+        display: block;
+    }
+
+    .header .navigation{
+        position: absolute;
+        right: 20px;
+        top: 8px;
+        z-index: 1;
+    }
+
+    .header .navigation .menu-desktop{
+        background-color: #fff;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .header .navigation .menu-desktop a{
+        display: block;
+        text-align: center;
+        padding: 20px;
     }
 }
