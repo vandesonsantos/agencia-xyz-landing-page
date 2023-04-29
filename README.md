@@ -1,6 +1,6 @@
 # Landing Page Agência-XYZ
 
-![Design preview for the NFT preview card component coding challenge](./src/images/tela-readme.gif)
+![https://vandesonsantos.github.io/agencia-xyz-landing-page/](./src/images/tela-readme.gif)
 
 
 ## Bem-Vindos! 👋
